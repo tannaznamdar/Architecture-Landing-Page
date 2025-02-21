@@ -1,6 +1,5 @@
 import "./App.css";
-import Logo from "./assets/components/Logo";
-import MenuList from "./assets/components/MenuList";
+import Header from "./assets/components/header/Header";
 
 export default function App() {
 
@@ -11,8 +10,7 @@ export default function App() {
     <>
       <div className="container mx-auto">
         <div className="mt-7">
-          <Logo />
-          <MenuList menuList={menuList} />
+          <Header menuList={menuList} />
         </div>
       </div>
     </>
