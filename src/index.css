@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/public/fonts/Raleway-Regular.ttf') format('ttf');
+  }
+  
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url('/public/fonts/Inconsolata-Regular.ttf') format('ttf');
+  }
+
