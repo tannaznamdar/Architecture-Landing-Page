@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./assets/components/header/Header";
+import Header from "./components/header/Header";
 
 export default function App() {
 
