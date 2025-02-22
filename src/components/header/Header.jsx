@@ -2,12 +2,20 @@ import Logo from "./Logo";
 import MenuList from "./MenuList";
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 
-export default function Header({ menuList }) {
+export default function Header() {
+
+  const menuList = [
+    { name: "Home", href: "/", current: true },
+    { name: "About us", href: "/about-us", current: false },
+    { name: "Services", href: "/services", current: false },
+    { name: "Blog", href: "/blog", current: false },
+  ];
+
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-7">
       <div className="flex items-center justify-between py-10">
         <Logo />
-        <MenuList menuList={menuList} />
+        <MenuList menuList={menuList}  />
         <div>
           <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer">
             <span className="text-lg font-bold text-gray-800">CONTACT US</span>
