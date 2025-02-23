@@ -8,10 +8,10 @@ export default function HomePage() {
         <div className="flex mt-2.5 items-center">
           <div className="w-1/2 items-center mr-16">
             <div className="w-3/5 ml-44">
-              <h2 className="text-[52px] font-bold leading-16 capitalize mb-9">
+              <h2 className="text-[52px] font-raleway font-bold leading-16 capitalize mb-9">
                 Create a modern and unique design your dream
               </h2>
-              <p className="mb-[50px] font-semibold text-lg">
+              <p className="mb-[50px] font-inconsolata text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
                 pharetra non. Integer lorem in scelerisque tortor dui tempor
