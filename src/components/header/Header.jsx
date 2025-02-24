@@ -18,7 +18,7 @@ export default function Header() {
         <MenuList menuList={menuList}  />
         <div>
           <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer">
-            <span className="text-lg font-bold text-gray-800">CONTACT US</span>
+            <span className="font-inconsolata text-lg font-bold leading-0">CONTACT US</span>
             <ArrowUpRightIcon className="size-5 text-black" />
           </button>
         </div>

@@ -10,8 +10,8 @@ export default function MenuList({ menuList }) {
             to={item.href}
             className={({ isActive, isPending }) =>
               `${
-                isActive ? "underline font-bold text-black" : ""
-              } font-semibold  text-gray-800 underline-offset-5 decoration-2 decoration-gray-600 tracking-tight cursor-pointer`
+                isActive ? "text-black underline font-bold underline-offset-5 decoration-2 decoration-gray-600 text-xl" : "text-gray-700 font-semibold text-xl "
+              } cursor-pointer `
             }
           >
             <li>{item.name}</li>
