@@ -71,42 +71,62 @@ export default function HomePage() {
       </div>
 
       <div className="container mx-auto">
-        <div className="flex gap-6 w-1/2">
-          <div>
-            <figure className="w-[320px] h-[430px]">
-              <img className="h-full w-auto" src={image3} />
-            </figure>
-          </div>
+        <div className="flex items-center">
+          <div className="flex gap-6 w-1/2">
+            <div>
+              <figure className="w-[320px] h-[430px]">
+                <img className="h-full w-auto" src={image3} />
+              </figure>
+            </div>
 
-          <div className="relative">
-            <figure className="w-[320px] h-[320px]">
-              <img className="h-full w-auto" src={image2} />
-            </figure>
+            <div className="relative">
+              <figure className="w-[320px] h-[320px]">
+                <img className="h-full w-auto" src={image2} />
+              </figure>
 
-            <div className="bg-[#F2F2F2] py-7 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-0 mt-6">
-              <div className="flex flex-col px-10">
-                <span className="font-bold font-raleway text-4xl">10</span>
-                <span className="text-lg font-semibold font-raleway">
-                  years
-                </span>
-              </div>
-              <div className="flex flex-col gap-1 px-10">
-                <span className="font-bold font-raleway text-4xl">200+</span>
-                <span className="text-lg font-semibold font-raleway">
-                  projects
-                </span>
-              </div>
-              <div className="flex flex-col gap-1 px-10">
-                <span className="font-bold font-raleway text-4xl">75</span>
-                <span className="text-lg font-semibold font-raleway">
-                  Partners
-                </span>
+              <div className="bg-[#F2F2F2] py-7 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-0 mt-6">
+                <div className="flex flex-col px-10">
+                  <span className="font-bold font-raleway text-4xl">10</span>
+                  <span className="text-lg font-semibold font-raleway">
+                    years
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1 px-10">
+                  <span className="font-bold font-raleway text-4xl">200+</span>
+                  <span className="text-lg font-semibold font-raleway">
+                    projects
+                  </span>
+                </div>
+                <div className="flex flex-col gap-1 px-10">
+                  <span className="font-bold font-raleway text-4xl">75</span>
+                  <span className="text-lg font-semibold font-raleway">
+                    Partners
+                  </span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="w-1/2"></div>
+          <div className="w-1/2">
+          <div className="flex gap-5 items-center mb-6">
+            <span className="border-b-2 w-[80px]"></span>
+            <span className="text-black font-semibold text-lg">Hello There</span>
+          </div>
+            <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+              We work professionally and wholeheartedly
+            </h2>
+            <p className="mb-[50px] font-inconsolata font-medium text-[#3D3D3D] text-[16px] text-justify pr-40">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
+              non. Integer lorem in scelerisque tortor dui tempor, volutpat
+              viverra faucibus. Sagittis maecenas tincidunt at purus. Amet non
+              vel elit aliquet id dolor risus imperdiet vitae. Amet, sagittis
+              mauris morbi erat velit id nullam. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Adipiscing dui tellus commodo
+              convallis.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
