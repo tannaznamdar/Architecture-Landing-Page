@@ -1,4 +1,6 @@
 import image1 from "../assets/images/image-1.png";
+import image2 from "../assets/images/image-2.png";
+import image3 from "../assets/images/image-3.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
@@ -28,7 +30,7 @@ export default function HomePage() {
               <h2 className="text-[52px] font-raleway font-bold leading-16 capitalize mb-9 ">
                 Create a modern and unique design your dream
               </h2>
-              <p className="mb-[50px] font-inconsolata font-semibold text-lg text-justify pr-40">
+              <p className="mb-[50px] font-inconsolata font-semibold text-[#3D3D3D] text-lg text-justify pr-40">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
                 pharetra non. Integer lorem in scelerisque tortor dui tempor
@@ -54,6 +56,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* logo-swiper */}
       <div className="container mx-auto flex mb-[90px]">
         <div className="w-1/4">
           <div className="w-1/2">
@@ -65,6 +68,45 @@ export default function HomePage() {
         <div className="w-3/4">
           <LogoSwiper logoImage={logoImage} />
         </div>
+      </div>
+
+      <div className="container mx-auto">
+        <div className="flex gap-6 w-1/2">
+          <div>
+            <figure className="w-[320px] h-[430px]">
+              <img className="h-full w-auto" src={image3} />
+            </figure>
+          </div>
+
+          <div className="relative">
+            <figure className="w-[320px] h-[320px]">
+              <img className="h-full w-auto" src={image2} />
+            </figure>
+
+            <div className="bg-[#F2F2F2] py-7 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-0 mt-6">
+              <div className="flex flex-col px-10">
+                <span className="font-bold font-raleway text-4xl">10</span>
+                <span className="text-lg font-semibold font-raleway">
+                  years
+                </span>
+              </div>
+              <div className="flex flex-col gap-1 px-10">
+                <span className="font-bold font-raleway text-4xl">200+</span>
+                <span className="text-lg font-semibold font-raleway">
+                  projects
+                </span>
+              </div>
+              <div className="flex flex-col gap-1 px-10">
+                <span className="font-bold font-raleway text-4xl">75</span>
+                <span className="text-lg font-semibold font-raleway">
+                  Partners
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-1/2"></div>
       </div>
     </>
   );
