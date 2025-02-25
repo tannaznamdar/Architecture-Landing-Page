@@ -1,6 +1,9 @@
 import image1 from "../assets/images/image-1.png";
 import image2 from "../assets/images/image-2.png";
 import image3 from "../assets/images/image-3.png";
+import image4 from "../assets/images/image-4.png";
+import image5 from "../assets/images/image-5.png";
+import image6 from "../assets/images/image-6.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
@@ -70,18 +73,18 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-[90px]">
         <div className="flex items-center">
           <div className="flex gap-6 w-1/2">
             <div>
               <figure className="w-[320px] h-[430px]">
-                <img className="h-full w-auto" src={image3} />
+                <img className="h-full w-full object-cover" src={image3} />
               </figure>
             </div>
 
             <div className="relative">
               <figure className="w-[320px] h-[320px]">
-                <img className="h-full w-auto" src={image2} />
+                <img className="h-full w-full object-cover" src={image2} />
               </figure>
 
               <div className="bg-[#F2F2F2] py-7 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-0 mt-6">
@@ -108,10 +111,12 @@ export default function HomePage() {
           </div>
 
           <div className="w-1/2">
-          <div className="flex gap-5 items-center mb-6">
-            <span className="border-b-2 w-[80px]"></span>
-            <span className="text-black font-semibold text-lg">Hello There</span>
-          </div>
+            <div className="flex gap-5 items-center mb-6">
+              <span className="border-b-2 w-[80px]"></span>
+              <span className="text-black font-semibold text-lg">
+                Hello There
+              </span>
+            </div>
             <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
               We work professionally and wholeheartedly
             </h2>
@@ -125,6 +130,47 @@ export default function HomePage() {
               consectetur adipiscing elit. Adipiscing dui tellus commodo
               convallis.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto mb-[90px]">
+        <div className="flex gap-5 items-center mb-6">
+          <span className="text-black font-semibold text-lg">Services</span>
+          <span className="border-b-2 w-[80px]"></span>
+        </div>
+        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+          Our capacity to help make your wishes come true
+        </h2>
+
+        <div className="flex gap-[5px]">
+          <div className="w-1/3 relative">
+            <figure className="w-full h-[540px] overflow-hidden">
+              <img
+                className="w-full h-full object-cover"
+                src={image4}
+                alt="#"
+              />
+            </figure>
+            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
+              interior design
+            </span>
+          </div>
+          <div className="w-1/3 relative">
+            <figure className="w-full h-[540px] overflow-hidden">
+              <img className="w-full h-full object-cover" src={image5} alt="#" />
+            </figure>
+            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
+              architecture
+            </span>
+          </div>
+          <div className="w-1/3 relative">
+            <figure className="w-full h-[540px] overflow-hidden">
+              <img className="w-full h-full object-cover" src={image6} alt="#" />
+            </figure>
+            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
+              furniture design
+            </span>
           </div>
         </div>
       </div>
