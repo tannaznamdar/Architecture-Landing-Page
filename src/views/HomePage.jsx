@@ -4,6 +4,7 @@ import image3 from "../assets/images/image-3.png";
 import image4 from "../assets/images/image-4.png";
 import image5 from "../assets/images/image-5.png";
 import image6 from "../assets/images/image-6.png";
+import image7 from "../assets/images/image-7.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
@@ -26,6 +27,7 @@ export default function HomePage() {
 
   return (
     <>
+      {/* section 1 */}
       <div className="w-[90%] ml-auto mb-[90px]">
         <div className="flex items-center">
           <div className="w-1/2">
@@ -73,6 +75,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* section 2 */}
       <div className="container mx-auto mb-[90px]">
         <div className="flex items-center">
           <div className="flex gap-6 w-1/2">
@@ -134,6 +137,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* section 3 */}
       <div className="container mx-auto mb-[90px]">
         <div className="flex gap-5 items-center mb-6">
           <span className="text-black font-semibold text-lg">Services</span>
@@ -158,7 +162,11 @@ export default function HomePage() {
           </div>
           <div className="w-1/3 relative">
             <figure className="w-full h-[540px] overflow-hidden">
-              <img className="w-full h-full object-cover" src={image5} alt="#" />
+              <img
+                className="w-full h-full object-cover"
+                src={image5}
+                alt="#"
+              />
             </figure>
             <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
               architecture
@@ -166,10 +174,42 @@ export default function HomePage() {
           </div>
           <div className="w-1/3 relative">
             <figure className="w-full h-[540px] overflow-hidden">
-              <img className="w-full h-full object-cover" src={image6} alt="#" />
+              <img
+                className="w-full h-full object-cover"
+                src={image6}
+                alt="#"
+              />
             </figure>
             <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
               furniture design
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* section 4 */}
+      <div className="container mx-auto mb-[90px]">
+        <div className="flex gap-5 items-center mb-6">
+          <span className="text-black font-semibold text-lg">Our Project</span>
+          <span className="border-b-2 w-[80px]"></span>
+        </div>
+        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+          Our latest projects
+        </h2>
+
+        <div className="relative">
+          <figure className="w-full h-[540px]">
+            <img className="w-full h-full object-cover" src={image7} alt="#" />
+          </figure>
+
+          <div className="absolute left-[50px] bottom-[50px] w-[18%]">
+            <h2 className="font-semibold text-2xl font-raleway text-white mb-[25px]">
+              Hanani Home
+            </h2>
+            <span className="text-[16px] text-white font-medium text-justify font-inconsolata">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
+              non.{" "}
             </span>
           </div>
         </div>
