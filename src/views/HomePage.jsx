@@ -8,9 +8,13 @@ import image7 from "../assets/images/image-7.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
+import user1 from "../assets/images/user1.png";
+import user2 from "../assets/images/user2.png";
+import user3 from "../assets/images/user3.png";
 
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/Logo-swiper";
+import CardComponent from "../components/CardComponent";
 
 export default function HomePage() {
   const logoImage = [
@@ -23,6 +27,33 @@ export default function HomePage() {
     logo1,
     logo2,
     logo3,
+  ];
+
+  const companyUsers = [
+    {
+      id: 1,
+      image: user1,
+      name: "Menta Nia",
+      CompanyName: "Company Name",
+      description:
+        "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
+    },
+    {
+      id: 2,
+      image: user2,
+      name: "Sannad",
+      CompanyName: "Company Name",
+      description:
+        "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
+    },
+    {
+      id: 3,
+      image: user3,
+      name: "George",
+      CompanyName: "Company Name",
+      description:
+        "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
+    },
   ];
 
   return (
@@ -209,9 +240,26 @@ export default function HomePage() {
             <span className="text-[16px] text-white font-medium text-justify font-inconsolata">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
-              non.{" "}
+              non.
             </span>
           </div>
+        </div>
+      </div>
+
+      {/* company Users card */}
+      <div className="container mx-auto mb-[90px]">
+        <div className="flex gap-5 items-center mb-6">
+          <span className="text-black font-semibold text-lg">Testimonial</span>
+          <span className="border-b-2 w-[80px]"></span>
+        </div>
+        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+          What Our Clients Say
+        </h2>
+
+        <div className="flex gap-12">
+          {companyUsers.map((item) => (
+            <CardComponent companyUser={item} />
+          ))}
         </div>
       </div>
     </>
