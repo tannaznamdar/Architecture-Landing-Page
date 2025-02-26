@@ -5,6 +5,7 @@ import image4 from "../assets/images/image-4.png";
 import image5 from "../assets/images/image-5.png";
 import image6 from "../assets/images/image-6.png";
 import image7 from "../assets/images/image-7.png";
+import image8 from "../assets/images/image-8.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
@@ -12,9 +13,10 @@ import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.png";
 import user3 from "../assets/images/user3.png";
 
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/Logo-swiper";
 import CardComponent from "../components/CardComponent";
+import { NavLink } from "react-router";
 
 export default function HomePage() {
   const logoImage = [
@@ -260,6 +262,30 @@ export default function HomePage() {
           {companyUsers.map((item) => (
             <CardComponent companyUser={item} />
           ))}
+        </div>
+      </div>
+
+      {/* contact us */}
+      <div className="relative mb-[90px]">
+        <figure className="h-[400px] w-full">
+          <img className="w-full h-full object-cover" src={image8} alt="#" />
+        </figure>
+        <div className=" absolute top-[20%] left-[10%] w-[25%]">
+          <h2 className="font-bold font-raleway text-[40px] mb-6">
+            Have A Question ? Start Consultation Now
+          </h2>
+          <p className="font-inconsolata text-[16px] font-medium mb-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
+            dui tellus commodo convallis.
+          </p>
+          <NavLink>
+            <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer bg-black">
+              <span className="font-inconsolata text-lg font-bold leading-0 text-white">
+                CONTACT US
+              </span>
+              <ArrowUpRightIcon className="size-5 text-white" />
+            </button>
+          </NavLink>
         </div>
       </div>
     </>
