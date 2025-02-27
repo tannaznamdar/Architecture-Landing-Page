@@ -1,4 +1,4 @@
-export default function CardComponent({ companyUser }) {
+export default function companyUsersCard({ companyUser }) {
   return (
     <div className="bg-[#F2F2F2] pl-10 pr-[57px] pt-10 pb-[77px] w-1/3">
       <div>
