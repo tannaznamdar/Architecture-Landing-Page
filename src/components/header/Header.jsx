@@ -12,7 +12,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="container mx-auto mt-7">
+    <header className="container mx-auto mt-7">
       <div className="flex items-center justify-between py-10">
         <Logo />
         <MenuList menuList={menuList}  />
@@ -23,6 +23,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
