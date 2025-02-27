@@ -6,6 +6,9 @@ import image5 from "../assets/images/image-5.png";
 import image6 from "../assets/images/image-6.png";
 import image7 from "../assets/images/image-7.png";
 import image8 from "../assets/images/image-8.png";
+import image9 from "../assets/images/image-9.png";
+import image10 from "../assets/images/image-10.png";
+import image11 from "../assets/images/image-11.png";
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
@@ -15,8 +18,9 @@ import user3 from "../assets/images/user3.png";
 
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/Logo-swiper";
-import CardComponent from "../components/CardComponent";
+import CardComponent from "../components/card/CompanyUsersCard";
 import { NavLink } from "react-router";
+import BlogCard from "../components/card/BlogCard";
 
 export default function HomePage() {
   const logoImage = [
@@ -57,6 +61,33 @@ export default function HomePage() {
         "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
     },
   ];
+
+  const blogCards = [
+    {
+      id: 1,
+      image: image9,
+      category: "Interior Design",
+      title: "Designer must be an interpreter",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non.",
+    },
+    {
+      id: 2,
+      image: image10,
+      category: "Interior Design",
+      title: "12 Best Outdoor Furniture Ideas ",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non.",
+    },
+    {
+      id: 3,
+      image: image11,
+      category: "Architecture",
+      title: "10 Of The Unique Buildings ",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non.",
+    },
+  ]
 
   return (
     <>
@@ -287,6 +318,25 @@ export default function HomePage() {
             </button>
           </NavLink>
         </div>
+      </div>
+
+      {/* blog */}
+      <div className="container mx-auto mb-[90px]">
+        <div className="flex gap-5 items-center mb-6">
+          <span className="text-black font-semibold text-lg">Our Blog</span>
+          <span className="border-b-2 w-[80px]"></span>
+        </div>
+        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+        Latest News and Articles
+        </h2>
+
+        <div className="flex gap-12">
+          {blogCards.map((item) => (
+            <BlogCard blogCard={item} />
+          ))}
+        </div>
+
+        
       </div>
     </>
   );
