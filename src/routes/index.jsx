@@ -4,6 +4,7 @@ import HomePage from "../views/HomePage";
 import AboutUsPage from "../views/AboutUsPage";
 import ServicesPage from "../views/ServicesPage";
 import BlogPage from "../views/BlogPage";
+import ContactUsPage from "../views/ContactUsPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <BlogPage />
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUsPage />
       },
     ],
   },
