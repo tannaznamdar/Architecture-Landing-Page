@@ -7,7 +7,7 @@ export default function Root() {
     <div>
       <Header />
       
-      <div>
+      <div className="min-h-screen">
         <Outlet />
       </div>
 

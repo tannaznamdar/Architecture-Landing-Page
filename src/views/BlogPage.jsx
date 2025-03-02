@@ -2,7 +2,7 @@ export default function BlogPage() {
 
     return (
       <>
-        <div>
+        <div className="container mx-auto">
            <h1> Blog Page </h1>
         </div>
       </>
