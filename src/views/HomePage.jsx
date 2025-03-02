@@ -21,6 +21,7 @@ import LogoSwiper from "../components/swiper/Logo-swiper";
 import CardComponent from "../components/card/CompanyUsersCard";
 import { NavLink } from "react-router";
 import BlogCard from "../components/card/BlogCard";
+import CategoryCard from "../components/card/CategoryCard";
 
 export default function HomePage() {
   const logoImage = [
@@ -87,7 +88,13 @@ export default function HomePage() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non.",
     },
-  ]
+  ];
+
+  const CategoryCards = [
+    { id: 1, image: image4, category: "interior design" },
+    { id: 2, image: image5, category: "architecture" },
+    { id: 3, image: image6, category: "furniture design" },
+  ];
 
   return (
     <>
@@ -211,43 +218,10 @@ export default function HomePage() {
           Our capacity to help make your wishes come true
         </h2>
 
-        <div className="flex gap-[5px]">
-          <div className="w-1/3 relative">
-            <figure className="w-full h-[540px] overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src={image4}
-                alt="#"
-              />
-            </figure>
-            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
-              interior design
-            </span>
-          </div>
-          <div className="w-1/3 relative">
-            <figure className="w-full h-[540px] overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src={image5}
-                alt="#"
-              />
-            </figure>
-            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
-              architecture
-            </span>
-          </div>
-          <div className="w-1/3 relative">
-            <figure className="w-full h-[540px] overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src={image6}
-                alt="#"
-              />
-            </figure>
-            <span className="capitalize font-bold text-2xl text-white font-raleway absolute left-6 bottom-6">
-              furniture design
-            </span>
-          </div>
+        <div className=" gap-x-[5px] gap-y-5 grid grid-cols-3">
+          {CategoryCards.map((item) => (
+            <CategoryCard key={item.id} CategoryCard={item} />
+          ))}
         </div>
       </div>
 
@@ -327,7 +301,7 @@ export default function HomePage() {
           <span className="border-b-2 w-[80px]"></span>
         </div>
         <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
-        Latest News and Articles
+          Latest News and Articles
         </h2>
 
         <div className="flex gap-12">
@@ -335,8 +309,6 @@ export default function HomePage() {
             <BlogCard blogCard={item} />
           ))}
         </div>
-
-        
       </div>
     </>
   );
