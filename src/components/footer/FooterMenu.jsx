@@ -13,7 +13,7 @@ export default function FooterMenu({ menuItems }) {
                 isActive
                   ? "text-black font-bold"
                   : "text-[#3D3D3D] font-semibold"
-              } cursor-pointer font-inconsolata text-[16px]`
+              } cursor-pointer font-inconsolata md:text-[16px] text-sm`
             }
           >
             <li>{item.name}</li>
