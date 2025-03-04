@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 export default function MenuList({ menuList }) {
   return (
     <nav>
-      <ul className="flex font-inconsolata  text-xl uppercase  gap-[50px] ">
+      <ul className="lg:flex hidden font-inconsolata  text-xl uppercase  gap-[50px] ">
         {menuList.map((item) => (
           <NavLink
             key={item.name}
