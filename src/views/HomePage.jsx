@@ -1,4 +1,9 @@
-import image1 from "../assets/images/image-1.png";
+import interior1 from "../assets/images/image-1.png";
+import interior2 from "../assets/images/villa-interior2.jpg"
+import interior3 from "../assets/images/villa-interior3.jpg"
+import interior4 from "../assets/images/villa-interior4.jpg"
+import interior5 from "../assets/images/villa-interior5.jpg"
+
 import image2 from "../assets/images/image-2.png";
 import image3 from "../assets/images/image-3.png";
 import image4 from "../assets/images/image-4.png";
@@ -9,21 +14,33 @@ import image8 from "../assets/images/image-8.png";
 import image9 from "../assets/images/image-9.png";
 import image10 from "../assets/images/image-10.png";
 import image11 from "../assets/images/image-11.png";
+
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
 import logo3 from "../assets/images/Logo3.png";
+
 import user1 from "../assets/images/user1.png";
 import user2 from "../assets/images/user2.png";
 import user3 from "../assets/images/user3.png";
 
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
-import LogoSwiper from "../components/swiper/Logo-swiper";
+import LogoSwiper from "../components/swiper/LogoSwiper";
 import CardComponent from "../components/card/CompanyUsersCard";
 import { NavLink } from "react-router";
 import BlogCard from "../components/card/BlogCard";
 import CategoryCard from "../components/card/CategoryCard";
+import ImageSwiper from "../components/swiper/ImageSwiper";
 
 export default function HomePage() {
+
+  const projectImg =[
+    interior1,
+    interior2,
+    interior3,
+    interior4,
+    interior5,
+  ]
+
   const logoImage = [
     logo1,
     logo2,
@@ -60,7 +77,7 @@ export default function HomePage() {
       CompanyName: "Company Name",
       description:
         "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
-    },
+    }
   ];
 
   const blogCards = [
@@ -112,8 +129,8 @@ export default function HomePage() {
                 pharetra non. Integer lorem in scelerisque tortor dui tempor
               </p>
               <button className="bg-black px-6 py-2.5 flex gap-3.5 items-center uppercase cursor-pointer">
-                <span className="text-white text-lg font-semibold font-inconsolata leading-0">
-                  VIEW A PROJECT
+                <span className="text-white text-lg font-semibold font-inconsolata uppercase leading-0">
+                  View a project
                 </span>
                 <ArrowRightIcon className="size-5 text-white" />
               </button>
@@ -121,13 +138,7 @@ export default function HomePage() {
           </div>
 
           <div className="w-1/2">
-            <figure className="h-[500px]">
-              <img
-                className="w-full h-full object-cover"
-                src={image1}
-                alt="#"
-              />
-            </figure>
+            <ImageSwiper projectImg={projectImg} />
           </div>
         </div>
       </div>
@@ -263,7 +274,7 @@ export default function HomePage() {
           What Our Clients Say
         </h2>
 
-        <div className="flex gap-12">
+        <div className=" gap-y-10 grid grid-cols-3  gap-x-12">
           {companyUsers.map((item) => (
             <CardComponent companyUser={item} />
           ))}
@@ -304,7 +315,7 @@ export default function HomePage() {
           Latest News and Articles
         </h2>
 
-        <div className="flex gap-12">
+        <div className="grid grid-cols-3 gap-x-12 gap-y-20">
           {blogCards.map((item) => (
             <BlogCard blogCard={item} />
           ))}
