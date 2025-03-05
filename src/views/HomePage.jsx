@@ -144,18 +144,18 @@ export default function HomePage() {
       </div>
 
       {/* logo-swiper */}
-      {/* <div className="container mx-auto flex mb-[90px]">
-        <div className="w-1/4">
-          <div className="w-1/2">
-            <span className="text-black font-raleway font-bold text-2xl ">
+      <div className="container mx-auto lg:px-0 px-6 flex lg:flex-row flex-col mb-[90px]">
+        <div className="lg:w-1/4">
+          <div className="lg:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-normal">
+            <span className="text-black font-raleway font-bold lg:text-2xl text-xl">
               Trusted by 75+ Partners
             </span>
           </div>
         </div>
-        <div className="w-3/4">
+        <div className="lg:w-3/4 w-full">
           <LogoSwiper logoImage={logoImage} />
         </div>
-      </div> */}
+      </div>
 
       {/* section 2 */}
       {/* <div className="container mx-auto mb-[90px]">

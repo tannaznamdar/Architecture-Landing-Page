@@ -4,14 +4,17 @@ import "swiper/css";
 export default function LogoSwiper({ logoImage }) {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={6}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      spaceBetween={30}
+      slidesPerView={4}
+      breakpoints={{
+        480: { slidesPerView: 4 },
+        640: { slidesPerView: 5 },
+        1024: { slidesPerView: 6 },
+      }}
     >
       {logoImage.map((item, index) => (
         <SwiperSlide key={index}>
-          <figure className="h-[60px] w-[150px]">
+          <figure className="lg:h-[60px] lg:w-[150px] h-9 w-[90px]">
             <img
               src={item}
               alt="#"
