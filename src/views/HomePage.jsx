@@ -307,28 +307,28 @@ export default function HomePage() {
       </div>
 
       {/* contact us */}
-      {/* <div className="relative mb-[90px]">
-        <figure className="h-[400px] w-full">
+      <div className="relative lg:mb-[90px] mb-[50px]">
+        <figure className="lg:h-[400px] h-[308px] w-full">
           <img className="w-full h-full object-cover" src={image8} alt="#" />
         </figure>
-        <div className=" absolute top-[20%] left-[10%] w-[25%]">
-          <h2 className="font-bold font-raleway text-[40px] mb-6">
+        <div className=" absolute md:top-[20%] top-[15%] lg:left-[10%] left-[5%] lg:w-1/4 md:w-2/4 w-2/3">
+          <h2 className="font-bold font-raleway lg:text-[40px] text-2xl mb-6">
             Have A Question ? Start Consultation Now
           </h2>
-          <p className="font-inconsolata text-[16px] font-medium mb-6">
+          <p className="font-inconsolata lg:text-[16px] text-sm font-medium mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
             dui tellus commodo convallis.
           </p>
           <NavLink>
             <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer bg-black">
-              <span className="font-inconsolata text-lg font-bold leading-0 text-white">
+              <span className="font-inconsolata lg:text-lg text-sm font-bold leading-0 text-white">
                 CONTACT US
               </span>
               <ArrowUpRightIcon className="size-5 text-white" />
             </button>
           </NavLink>
         </div>
-      </div> */}
+      </div>
 
       {/* blog */}
       {/* <div className="container mx-auto mb-[90px]">
