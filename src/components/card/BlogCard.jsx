@@ -1,6 +1,5 @@
 export default function BlogCard({ blogCard }) {
   return (
-    <div className="w-1/3">
       <div>
         <div className="">
           <figure className="h-[380px] mb-2.5">
@@ -26,6 +25,5 @@ export default function BlogCard({ blogCard }) {
           </p>
         </div>
       </div>
-    </div>
   );
 }
