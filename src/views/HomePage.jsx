@@ -14,6 +14,9 @@ import image8 from "../assets/images/image-8.png";
 import image9 from "../assets/images/image-9.png";
 import image10 from "../assets/images/image-10.png";
 import image11 from "../assets/images/image-11.png";
+import image12 from "../assets/images/image-12.jpg";
+import image13 from "../assets/images/image-13.jpg";
+import image14 from "../assets/images/image-14.jpg";
 
 import logo1 from "../assets/images/Logo1.png";
 import logo2 from "../assets/images/Logo2.png";
@@ -30,6 +33,7 @@ import { href, NavLink } from "react-router";
 import BlogCard from "../components/card/BlogCard";
 import CategoryCard from "../components/card/CategoryCard";
 import ImageSwiper from "../components/swiper/ImageSwiper";
+import BannerSwiper from "../components/swiper/BannerSwiper";
 
 export default function HomePage() {
   const projectImg = [interior1, interior2, interior3, interior4, interior5];
@@ -52,10 +56,37 @@ export default function HomePage() {
     { id: 3, title: "75", subTitle: "Partners" },
   ];
 
-  const CategoryCards = [
+  const categoryCards = [
     { id: 1, image: image4, category: "interior design" },
     { id: 2, image: image5, category: "architecture" },
     { id: 3, image: image6, category: "furniture design" },
+  ];
+
+  const banner = [
+    {
+      id: 1,
+      image: image14,
+      title: "dream Home",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non. ",
+    },
+    {
+      id: 2,
+      image: image7,
+      title: "Hanani Home",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non. ",
+    },
+    {
+      id: 3,
+      image: image12,
+      title: "Niyavaran Home",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non. ",
+    },
+    {
+      id: 4,
+      image: image13,
+      title: "we Home",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non. ",
+    }
   ];
 
   const companyUsers = [
@@ -82,7 +113,7 @@ export default function HomePage() {
       CompanyName: "Company Name",
       description:
         "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
-    }
+    },
   ];
 
   const blogCards = [
@@ -111,8 +142,6 @@ export default function HomePage() {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non.",
     },
   ];
-
-
 
   return (
     <>
@@ -215,7 +244,9 @@ export default function HomePage() {
       {/* Category Card */}
       <div className="container mx-auto lg:px-0 px-6 lg:mb-[90px] mb-[50px]">
         <div className="flex gap-5 items-center mb-6">
-          <span className="text-black font-semibold lg:text-lg text-sm">Services</span>
+          <span className="text-black font-semibold lg:text-lg text-sm">
+            Services
+          </span>
           <span className="border-b-2 w-[80px]"></span>
         </div>
         <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
@@ -223,39 +254,26 @@ export default function HomePage() {
         </h2>
 
         <div className=" gap-x-[5px] gap-y-6 grid lg:grid-cols-3">
-          {CategoryCards.map((item) => (
+          {categoryCards.map((item) => (
             <CategoryCard key={item.id} CategoryCard={item} />
           ))}
         </div>
       </div>
 
       {/* section 4 */}
-      {/* <div className="container mx-auto mb-[90px]">
-        <div className="flex gap-5 items-center mb-6">
-          <span className="text-black font-semibold text-lg">Our Project</span>
+      <div className="max-w-none lg:container mx-auto lg:px-0 lg:mb-[90px] mb-[50px]">
+        <div className="flex gap-5 items-center mb-6 lg:px-0 px-6">
+          <span className="text-black font-semibold lg:text-lg text-sm">
+            Our Project
+          </span>
           <span className="border-b-2 w-[80px]"></span>
         </div>
-        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+        <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9 lg:px-0 px-6">
           Our latest projects
         </h2>
 
-        <div className="relative">
-          <figure className="w-full h-[540px]">
-            <img className="w-full h-full object-cover" src={image7} alt="#" />
-          </figure>
-
-          <div className="absolute left-[50px] bottom-[50px] w-[18%]">
-            <h2 className="font-semibold text-2xl font-raleway text-white mb-[25px]">
-              Hanani Home
-            </h2>
-            <span className="text-[16px] text-white font-medium text-justify font-inconsolata">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
-              non.
-            </span>
-          </div>
-        </div>
-      </div> */}
+        <BannerSwiper banner={banner} />
+      </div>
 
       {/* company Users card */}
       {/* <div className="container mx-auto mb-[90px]">
