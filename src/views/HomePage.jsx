@@ -331,21 +331,21 @@ export default function HomePage() {
       </div>
 
       {/* blog */}
-      {/* <div className="container mx-auto mb-[90px]">
+      <div className="container mx-auto lg:px-0 px-6 lg:mb-[90px] mb-[50px]">
         <div className="flex gap-5 items-center mb-6">
-          <span className="text-black font-semibold text-lg">Our Blog</span>
+          <span className="text-black font-semibold lg:text-lg text-sm">Our Blog</span>
           <span className="border-b-2 w-[80px]"></span>
         </div>
-        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+        <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           Latest News and Articles
         </h2>
 
-        <div className="grid grid-cols-3 gap-x-12 gap-y-20">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-x-12 gap-x-8 gap-y-20">
           {blogCards.map((item) => (
             <BlogCard blogCard={item} />
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

@@ -10,17 +10,17 @@ export default function BlogCard({ blogCard }) {
             />
           </figure>
           <div className="flex flex-col gap-[5px]">
-            <span className="font-raleway text-lg font-semibold text-[#3D3D3D] mb-2.5">
+            <span className="font-raleway lg:text-lg text-sm font-semibold text-[#3D3D3D] mb-2.5">
               {blogCard.category}
             </span>
-            <span className="font-raleway text-[32px] font-bold text-black mb-6">
+            <span className="font-raleway lg:text-[32px] text-2xl font-bold text-black mb-6">
               {blogCard.title}
             </span>
           </div>
         </div>
 
         <div>
-          <p className=" font-inconsolata text-[16px] font-medium text-[#3D3D3D] text-justify">
+          <p className=" font-inconsolata lg:text-[16px] text-sm font-medium text-[#3D3D3D] text-justify">
             {blogCard.description}
           </p>
         </div>
