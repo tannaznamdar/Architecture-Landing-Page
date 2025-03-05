@@ -28,12 +28,12 @@ import user3 from "../assets/images/user3.png";
 
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/LogoSwiper";
-import CardComponent from "../components/card/CompanyUsersCard";
 import { href, NavLink } from "react-router";
 import BlogCard from "../components/card/BlogCard";
 import CategoryCard from "../components/card/CategoryCard";
 import ImageSwiper from "../components/swiper/ImageSwiper";
 import BannerSwiper from "../components/swiper/BannerSwiper";
+import UsersCardsSwiper from "../components/swiper/UsersCardsSwiper";
 
 export default function HomePage() {
   const projectImg = [interior1, interior2, interior3, interior4, interior5];
@@ -108,6 +108,22 @@ export default function HomePage() {
     },
     {
       id: 3,
+      image: user3,
+      name: "George",
+      CompanyName: "Company Name",
+      description:
+        "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
+    },
+    {
+      id: 4,
+      image: user2,
+      name: "Sannad",
+      CompanyName: "Company Name",
+      description:
+        "“ Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non “",
+    },
+    {
+      id: 5,
       image: user3,
       name: "George",
       CompanyName: "Company Name",
@@ -275,22 +291,20 @@ export default function HomePage() {
         <BannerSwiper banner={banner} />
       </div>
 
-      {/* company Users card */}
-      {/* <div className="container mx-auto mb-[90px]">
+      {/* company Users swiper */}
+      <div className="container mx-auto lg:px-0 px-6 lg:mb-[90px] mb-[50px]">
         <div className="flex gap-5 items-center mb-6">
-          <span className="text-black font-semibold text-lg">Testimonial</span>
+          <span className="text-black font-semibold lg:text-lg text-sm">Testimonial</span>
           <span className="border-b-2 w-[80px]"></span>
         </div>
-        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+        <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           What Our Clients Say
         </h2>
 
-        <div className=" gap-y-10 grid grid-cols-3  gap-x-12">
-          {companyUsers.map((item) => (
-            <CardComponent companyUser={item} />
-          ))}
+        <div>
+         <UsersCardsSwiper companyUsers={companyUsers} />
         </div>
-      </div> */}
+      </div>
 
       {/* contact us */}
       {/* <div className="relative mb-[90px]">
