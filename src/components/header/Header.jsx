@@ -10,6 +10,12 @@ export default function Header() {
 
   const showMenuHandler = () => {
     setMobileMenu(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeMenuHandler = () => {
+    setMobileMenu(false);
+    document.body.style.overflow = "auto";
   };
 
   const menuList = [
@@ -42,10 +48,15 @@ export default function Header() {
           </button>
         </div>
 
-        <div onClick={() => setMobileMenu(false)}  className={`lg:hidden fixed inset-0 z-10 bg-gray-900/30 backdrop-blur-sm transition-all duration-300 ${mobileMenu ? "block" : "hidden"}`}></div>
+        <div
+          onClick={closeMenuHandler}
+          className={`lg:hidden fixed inset-0 z-10 bg-gray-900/30 backdrop-blur-sm transition-all duration-300 ${
+            mobileMenu ? "block" : "hidden"
+          }`}
+        ></div>
 
         <div className={`lg:hidden ${mobileMenu ? "block" : "hidden"}`}>
-          <MobileMenu menuList={menuList} setMobileMenu={setMobileMenu} />
+          <MobileMenu menuList={menuList} closeMenu={closeMenuHandler} />
         </div>
       </div>
     </header>

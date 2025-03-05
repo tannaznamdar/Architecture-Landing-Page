@@ -2,14 +2,14 @@ import { Link, NavLink } from "react-router";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import FooterLogo from "../footer/FooterLogo";
 
-export default function MobileMenu({ menuList, setMobileMenu }) {
+export default function MobileMenu({ menuList, closeMenu }) {
   return (
     <div className="md:w-[50%] w-[70%] bg-[#F2F2F2] h-screen fixed top-0 right-0 px-10 py-12 z-20">
       <div className="flex items-center justify-between mb-8">
         <FooterLogo />
         <XMarkIcon
           className="size-6 text-red-800"
-          onClick={() => setMobileMenu(false)}
+          onClick={closeMenu}
         />
       </div>
 
