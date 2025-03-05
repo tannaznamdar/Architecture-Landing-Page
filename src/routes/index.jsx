@@ -5,6 +5,7 @@ import AboutUsPage from "../views/AboutUsPage";
 import ServicesPage from "../views/ServicesPage";
 import BlogPage from "../views/BlogPage";
 import ContactUsPage from "../views/ContactUsPage";
+import SinglePage from "../views/SinglePage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactUsPage />
+      },
+      {
+        path: "/single-page/:category",
+        element: <SinglePage />
       },
     ],
   },
