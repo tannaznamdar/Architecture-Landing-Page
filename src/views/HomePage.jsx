@@ -26,7 +26,7 @@ import user3 from "../assets/images/user3.png";
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/LogoSwiper";
 import CardComponent from "../components/card/CompanyUsersCard";
-import { NavLink } from "react-router";
+import { href, NavLink } from "react-router";
 import BlogCard from "../components/card/BlogCard";
 import CategoryCard from "../components/card/CategoryCard";
 import ImageSwiper from "../components/swiper/ImageSwiper";
@@ -50,6 +50,12 @@ export default function HomePage() {
     { id: 1, title: "10", subTitle: "years" },
     { id: 2, title: "200+", subTitle: "projects" },
     { id: 3, title: "75", subTitle: "Partners" },
+  ];
+
+  const CategoryCards = [
+    { id: 1, image: image4, category: "interior design" },
+    { id: 2, image: image5, category: "architecture" },
+    { id: 3, image: image6, category: "furniture design" },
   ];
 
   const companyUsers = [
@@ -106,11 +112,7 @@ export default function HomePage() {
     },
   ];
 
-  const CategoryCards = [
-    { id: 1, image: image4, category: "interior design" },
-    { id: 2, image: image5, category: "architecture" },
-    { id: 3, image: image6, category: "furniture design" },
-  ];
+
 
   return (
     <>
@@ -189,14 +191,14 @@ export default function HomePage() {
           <div className="lg:w-1/2 lg:mt-0 mt-30 lg:pl-0 pl-6">
             <div className="flex gap-5 items-center mb-6">
               <span className="border-b-2 w-[80px]"></span>
-              <span className="text-black font-semibold text-lg">
+              <span className="text-black font-semibold lg:text-lg text-sm">
                 Hello There
               </span>
             </div>
             <h2 className="md:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize md:mb-9 mb-4">
               We work professionally and wholeheartedly
             </h2>
-            <p className="mb-[50px] font-inconsolata font-medium text-[#3D3D3D] md:text-[16px] text-sm text-justify lg:pr-40 pr-6">
+            <p className="font-inconsolata font-medium text-[#3D3D3D] md:text-[16px] text-sm text-justify lg:pr-40 pr-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
               non. Integer lorem in scelerisque tortor dui tempor, volutpat
@@ -210,22 +212,22 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* section 3 */}
-      {/* <div className="container mx-auto mb-[90px]">
+      {/* Category Card */}
+      <div className="container mx-auto lg:px-0 px-6 lg:mb-[90px] mb-[50px]">
         <div className="flex gap-5 items-center mb-6">
-          <span className="text-black font-semibold text-lg">Services</span>
+          <span className="text-black font-semibold lg:text-lg text-sm">Services</span>
           <span className="border-b-2 w-[80px]"></span>
         </div>
-        <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+        <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           Our capacity to help make your wishes come true
         </h2>
 
-        <div className=" gap-x-[5px] gap-y-5 grid grid-cols-3">
+        <div className=" gap-x-[5px] gap-y-6 grid lg:grid-cols-3">
           {CategoryCards.map((item) => (
             <CategoryCard key={item.id} CategoryCard={item} />
           ))}
         </div>
-      </div> */}
+      </div>
 
       {/* section 4 */}
       {/* <div className="container mx-auto mb-[90px]">
