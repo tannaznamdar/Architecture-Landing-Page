@@ -1,8 +1,8 @@
 import interior1 from "../assets/images/image-1.png";
-import interior2 from "../assets/images/villa-interior2.jpg"
-import interior3 from "../assets/images/villa-interior3.jpg"
-import interior4 from "../assets/images/villa-interior4.jpg"
-import interior5 from "../assets/images/villa-interior5.jpg"
+import interior2 from "../assets/images/villa-interior2.jpg";
+import interior3 from "../assets/images/villa-interior3.jpg";
+import interior4 from "../assets/images/villa-interior4.jpg";
+import interior5 from "../assets/images/villa-interior5.jpg";
 
 import image2 from "../assets/images/image-2.png";
 import image3 from "../assets/images/image-3.png";
@@ -32,14 +32,7 @@ import CategoryCard from "../components/card/CategoryCard";
 import ImageSwiper from "../components/swiper/ImageSwiper";
 
 export default function HomePage() {
-
-  const projectImg =[
-    interior1,
-    interior2,
-    interior3,
-    interior4,
-    interior5,
-  ]
+  const projectImg = [interior1, interior2, interior3, interior4, interior5];
 
   const logoImage = [
     logo1,
@@ -51,6 +44,12 @@ export default function HomePage() {
     logo1,
     logo2,
     logo3,
+  ];
+
+  const boxInfo = [
+    { id: 1, title: "10", subTitle: "years" },
+    { id: 2, title: "200+", subTitle: "projects" },
+    { id: 3, title: "75", subTitle: "Partners" },
   ];
 
   const companyUsers = [
@@ -116,7 +115,7 @@ export default function HomePage() {
   return (
     <>
       {/* project-slider */}
-      <div className="lg:w-[90%] ml-auto mb-[90px]">
+      <div className="lg:w-[90%] ml-auto lg:mb-[90px] mb-[50px] ">
         <div className="flex lg:flex-row flex-col items-center">
           <div className="lg:w-1/2 w-full">
             <div className="lg:w-3/4 w-full">
@@ -144,7 +143,7 @@ export default function HomePage() {
       </div>
 
       {/* logo-swiper */}
-      <div className="container mx-auto lg:px-0 px-6 flex lg:flex-row flex-col mb-[90px]">
+      <div className="container mx-auto lg:px-0 px-6 flex lg:flex-row flex-col lg:mb-[90px] mb-[50px]">
         <div className="lg:w-1/4">
           <div className="lg:w-1/2 mb-6 lg:mb-0 flex justify-center lg:justify-normal">
             <span className="text-black font-raleway font-bold lg:text-2xl text-xl">
@@ -157,55 +156,47 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* section 2 */}
-      {/* <div className="container mx-auto mb-[90px]">
-        <div className="flex items-center">
-          <div className="flex gap-6 w-1/2">
+      {/* section 1 */}
+      <div className="container mx-auto lg:mb-[90px] mb-[50px]">
+        <div className="flex lg:flex-row flex-col items-center">
+          <div className="flex md:gap-6 gap-3.5 lg:w-1/2">
             <div>
-              <figure className="w-[320px] h-[430px]">
+              <figure className="md:w-[320px] md:h-[430px] w-[163px] h-[220px]">
                 <img className="h-full w-full object-cover" src={image3} />
               </figure>
             </div>
 
             <div className="relative">
-              <figure className="w-[320px] h-[320px]">
+              <figure className="md:w-[320px] md:h-[320px] w-[163px] h-[163px]">
                 <img className="h-full w-full object-cover" src={image2} />
               </figure>
 
-              <div className="bg-[#F2F2F2] py-7 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-0 mt-6">
-                <div className="flex flex-col px-10">
-                  <span className="font-bold font-raleway text-4xl">10</span>
-                  <span className="text-lg font-semibold font-raleway">
-                    years
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1 px-10">
-                  <span className="font-bold font-raleway text-4xl">200+</span>
-                  <span className="text-lg font-semibold font-raleway">
-                    projects
-                  </span>
-                </div>
-                <div className="flex flex-col gap-1 px-10">
-                  <span className="font-bold font-raleway text-4xl">75</span>
-                  <span className="text-lg font-semibold font-raleway">
-                    Partners
-                  </span>
-                </div>
+              <div className="bg-[#F2F2F2] md:py-7 py-5 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-[-34px] md:mt-4 mt-3 shadow-md shadow-gray-300">
+                {boxInfo.map((item) => (
+                  <div className="flex flex-col md:px-10 px-7 items-center justify-center">
+                    <span className="font-bold font-raleway md:text-4xl text-2xl">
+                      {item.title}
+                    </span>
+                    <span className="md:text-lg text-sm font-semibold font-raleway">
+                      {item.subTitle}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="lg:w-1/2 lg:mt-0 mt-30 lg:pl-0 pl-6">
             <div className="flex gap-5 items-center mb-6">
               <span className="border-b-2 w-[80px]"></span>
               <span className="text-black font-semibold text-lg">
                 Hello There
               </span>
             </div>
-            <h2 className="text-[40px] font-raleway font-bold leading-16 capitalize mb-9">
+            <h2 className="md:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize md:mb-9 mb-4">
               We work professionally and wholeheartedly
             </h2>
-            <p className="mb-[50px] font-inconsolata font-medium text-[#3D3D3D] text-[16px] text-justify pr-40">
+            <p className="mb-[50px] font-inconsolata font-medium text-[#3D3D3D] md:text-[16px] text-sm text-justify lg:pr-40 pr-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
               non. Integer lorem in scelerisque tortor dui tempor, volutpat
@@ -217,7 +208,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* section 3 */}
       {/* <div className="container mx-auto mb-[90px]">
