@@ -115,21 +115,21 @@ export default function HomePage() {
 
   return (
     <>
-      {/* section 1 */}
-      <div className="w-[90%] ml-auto mb-[90px]">
-        <div className="flex items-center">
-          <div className="w-1/2">
-            <div className="w-3/4">
-              <h2 className="text-[52px] font-raleway font-bold leading-16 capitalize mb-9 ">
+      {/* project-slider */}
+      <div className="lg:w-[90%] ml-auto mb-[90px]">
+        <div className="flex lg:flex-row flex-col items-center">
+          <div className="lg:w-1/2 w-full">
+            <div className="lg:w-3/4 w-full">
+              <h2 className="lg:text-[52px] text-[32px] font-raleway font-bold lg:leading-16 capitalize mb-9 lg:px-0 px-6">
                 Create a modern and unique design your dream
               </h2>
-              <p className="mb-[50px] font-inconsolata font-semibold text-[#3D3D3D] text-lg text-justify pr-40">
+              <p className="mb-[50px] font-inconsolata font-semibold text-[#3D3D3D] lg:text-lg text-sm text-justify lg:pr-40 px-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Adipiscing dui tellus commodo convallis. Auctor eget orci
                 pharetra non. Integer lorem in scelerisque tortor dui tempor
               </p>
-              <button className="bg-black px-6 py-2.5 flex gap-3.5 items-center uppercase cursor-pointer">
-                <span className="text-white text-lg font-semibold font-inconsolata uppercase leading-0">
+              <button className="bg-black px-6 py-2.5 flex gap-3.5 items-center uppercase cursor-pointer mb-[50px] lg:mb-0 lg:ml-0 ml-6">
+                <span className="text-white lg:text-lg text-sm font-semibold font-inconsolata uppercase leading-0 ">
                   View a project
                 </span>
                 <ArrowRightIcon className="size-5 text-white" />
@@ -137,14 +137,14 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="w-1/2">
+          <div className="lg:w-1/2 w-full">
             <ImageSwiper projectImg={projectImg} />
           </div>
         </div>
       </div>
 
       {/* logo-swiper */}
-      <div className="container mx-auto flex mb-[90px]">
+      {/* <div className="container mx-auto flex mb-[90px]">
         <div className="w-1/4">
           <div className="w-1/2">
             <span className="text-black font-raleway font-bold text-2xl ">
@@ -155,10 +155,10 @@ export default function HomePage() {
         <div className="w-3/4">
           <LogoSwiper logoImage={logoImage} />
         </div>
-      </div>
+      </div> */}
 
       {/* section 2 */}
-      <div className="container mx-auto mb-[90px]">
+      {/* <div className="container mx-auto mb-[90px]">
         <div className="flex items-center">
           <div className="flex gap-6 w-1/2">
             <div>
@@ -217,10 +217,10 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* section 3 */}
-      <div className="container mx-auto mb-[90px]">
+      {/* <div className="container mx-auto mb-[90px]">
         <div className="flex gap-5 items-center mb-6">
           <span className="text-black font-semibold text-lg">Services</span>
           <span className="border-b-2 w-[80px]"></span>
@@ -234,10 +234,10 @@ export default function HomePage() {
             <CategoryCard key={item.id} CategoryCard={item} />
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* section 4 */}
-      <div className="container mx-auto mb-[90px]">
+      {/* <div className="container mx-auto mb-[90px]">
         <div className="flex gap-5 items-center mb-6">
           <span className="text-black font-semibold text-lg">Our Project</span>
           <span className="border-b-2 w-[80px]"></span>
@@ -262,10 +262,10 @@ export default function HomePage() {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* company Users card */}
-      <div className="container mx-auto mb-[90px]">
+      {/* <div className="container mx-auto mb-[90px]">
         <div className="flex gap-5 items-center mb-6">
           <span className="text-black font-semibold text-lg">Testimonial</span>
           <span className="border-b-2 w-[80px]"></span>
@@ -279,10 +279,10 @@ export default function HomePage() {
             <CardComponent companyUser={item} />
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* contact us */}
-      <div className="relative mb-[90px]">
+      {/* <div className="relative mb-[90px]">
         <figure className="h-[400px] w-full">
           <img className="w-full h-full object-cover" src={image8} alt="#" />
         </figure>
@@ -303,10 +303,10 @@ export default function HomePage() {
             </button>
           </NavLink>
         </div>
-      </div>
+      </div> */}
 
       {/* blog */}
-      <div className="container mx-auto mb-[90px]">
+      {/* <div className="container mx-auto mb-[90px]">
         <div className="flex gap-5 items-center mb-6">
           <span className="text-black font-semibold text-lg">Our Blog</span>
           <span className="border-b-2 w-[80px]"></span>
@@ -320,7 +320,7 @@ export default function HomePage() {
             <BlogCard blogCard={item} />
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

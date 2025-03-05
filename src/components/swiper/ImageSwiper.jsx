@@ -19,7 +19,7 @@ export default function ImageSwiper({ projectImg }) {
       >
         {projectImg.map((item, index) => (
           <SwiperSlide key={index}>
-            <figure className="h-[500px]">
+            <figure className="md:h-[500px] h-[300px]">
               <img src={item} alt="#" className="w-full h-full object-cover" />
             </figure>
           </SwiperSlide>
