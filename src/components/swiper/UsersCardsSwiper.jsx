@@ -31,8 +31,8 @@ export default function UsersCardsSwiper({ companyUsers }) {
         ))}
       </Swiper>
 
-      <div className="bg-[#F2F2F2] w-fit px-[15px] py-2 mx-auto block lg:hidden">
-        <div className="flex gap-5">
+      <div className="bg-[#F2F2F2] w-fit px-2 py-2 mx-auto block lg:hidden">
+        <div className="flex gap-3">
           <button
             onClick={() => swiperRef.current?.slideNext()}
             className=" text-gray-600 transition"

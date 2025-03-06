@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import SinglePage from "../../views/SinglePage";
 
 export default function CategoryCard({ CategoryCard }) {
   return (

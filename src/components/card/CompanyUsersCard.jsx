@@ -1,6 +1,6 @@
 export default function CompanyUsersCard({ item }) {
   return (
-    <div className="bg-[#F2F2F2] pl-10 pr-[57px] pt-10 pb-[77px]">
+    <div className="bg-[#F2F2F2] pl-10 pr-[57px] pt-10 pb-[77px] cursor-pointer">
       <div>
         <div className="mb-11 flex gap-[15px] items-center">
           <figure className="w-[80px] h-[80px]">
