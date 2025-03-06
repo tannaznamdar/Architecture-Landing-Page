@@ -56,7 +56,7 @@ export default function Header() {
         ></div>
 
         <div className={`lg:hidden ${mobileMenu ? "block" : "hidden"}`}>
-          <MobileMenu menuList={menuList} closeMenu={closeMenuHandler} />
+          <MobileMenu menuList={menuList} closeMenu={closeMenuHandler} setMobileMenu={setMobileMenu} />
         </div>
       </div>
     </header>
