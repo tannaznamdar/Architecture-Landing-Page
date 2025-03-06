@@ -1,6 +1,8 @@
+import { Link } from "react-router";
+
 export default function FooterLogo() {
   return (
-    <div className="flex gap-0.5 items-center">
+    <Link className="flex gap-0.5 items-center" to="/">
       <span className="font-raleway lg:text-5xl text-4xl text-gray-700 font-extrabold">
         Ima
       </span>
@@ -9,6 +11,6 @@ export default function FooterLogo() {
           h
         </span>
       </div>
-    </div>
+    </Link>
   );
 }
