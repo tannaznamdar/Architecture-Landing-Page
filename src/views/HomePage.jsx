@@ -162,30 +162,30 @@ export default function HomePage() {
   return (
     <>
       {/* project-slider */}
-      <div className="lg:w-[90%] ml-auto lg:mb-[90px] mb-[50px]">
+      <div className="container mx-auto lg:mb-[90px] mb-[50px] ">
         <div className="flex lg:flex-row flex-col items-center">
-          <div className="lg:w-2/5 w-full">
-            <div className="pr-5 w-full">
-              <h2 className="lg:text-[52px] text-[32px] font-raleway font-bold lg:leading-16 capitalize mb-9 lg:px-0 px-6">
-                Create a modern and unique design your dream
-              </h2>
-              <p className="mb-[50px] font-inconsolata font-semibold text-[#3D3D3D] lg:text-lg text-sm text-justify lg:pr-40 px-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Adipiscing dui tellus commodo convallis. Auctor eget orci
-                pharetra non. Integer lorem in scelerisque tortor dui tempor
-              </p>
-              <Link to={`/single-page/project`}>
-                <button className="bg-black px-7 py-4 flex gap-3.5 items-center uppercase cursor-pointer mb-[50px] lg:mb-0 lg:ml-0 ml-6">
-                  <span className="text-white lg:text-lg text-sm font-semibold font-inconsolata uppercase leading-0 ">
-                    View a project
-                  </span>
-                  <ArrowRightIcon className="size-5 text-white" />
-                </button>
-              </Link>
-            </div>
+            <div className="lg:w-2/5 w-full">
+              <div className="pr-5 w-full">
+                <h2 className="lg:text-[52px] text-[32px] font-raleway font-bold lg:leading-16 capitalize mb-9 lg:px-0 px-6">
+                  Create a modern and unique design your dream
+                </h2>
+                <p className="mb-[50px] font-inconsolata font-semibold text-[#3D3D3D] lg:text-lg text-sm text-justify lg:pr-40 px-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Adipiscing dui tellus commodo convallis. Auctor eget orci
+                  pharetra non. Integer lorem in scelerisque tortor dui tempor
+                </p>
+                <Link to={`/single-page/project`}>
+                  <button className="bg-black px-7 py-4 flex gap-3.5 items-center uppercase cursor-pointer mb-[50px] lg:mb-0 lg:ml-0 ml-6">
+                    <span className="text-white lg:text-lg text-sm font-semibold font-inconsolata uppercase leading-0 ">
+                      View a project
+                    </span>
+                    <ArrowRightIcon className="size-5 text-white" />
+                  </button>
+                </Link>
+              </div>
           </div>
 
-          <div className="lg:w-3/5 w-full">
+          <div className="lg:absolute lg:right-0 lg:w-3/5 w-full">
             <ImageSwiper projectImg={projectImg} />
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
             <h2 className="md:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize md:mb-9 mb-4">
               We work professionally and wholeheartedly
             </h2>
-            <p className="font-inconsolata font-medium text-[#3D3D3D] md:text-[16px] text-sm text-justify lg:pr-40 pr-6">
+            <p className="font-inconsolata font-medium text-[#3D3D3D] md:text-[16px] text-sm text-justify lg:mr-0 mr-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra
               non. Integer lorem in scelerisque tortor dui tempor, volutpat
@@ -318,7 +318,7 @@ export default function HomePage() {
         <figure className="lg:h-[400px] h-[308px] w-full">
           <img className="w-full h-full object-cover" src={image8} alt="#" />
         </figure>
-        <div className="container mx-auto lg:px-0 px-6" >
+        <div className="container mx-auto lg:px-0 px-6">
           <div className=" absolute top-[20%] lg:w-1/4 md:w-2/4 w-2/3">
             <h2 className="font-bold font-raleway text-[#3D3D3D] lg:text-[40px] text-2xl mb-6">
               Have A Question ? Start Consultation Now

@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer className="bottom-0">
       <div className="bg-[#F2F2F2] lg:pt-[75px] pt-[50px] border-b-2 border-gray-200 lg:flex gap-3 px-[10%] ">
-        <div className="container mx-auto flex">
+        <div className="container mx-auto flex lg:flex-row flex-col">
           <div className="lg:w-2/6 mb-[50px] lg:mb-0">
             <FooterLogo />
             <p className="pt-6 lg:pr-20 pr-0 font-medium font-inconsolata md:text-[16px] text-sm text-[#3D3D3D] text-justify border-b border-gray-300 lg:border-b-0 pb-[35px] lg:pb-0">
