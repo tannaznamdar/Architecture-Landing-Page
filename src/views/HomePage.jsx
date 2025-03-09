@@ -28,7 +28,7 @@ import user3 from "../assets/images/user3.png";
 
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import LogoSwiper from "../components/swiper/LogoSwiper";
-import { Link, NavLink } from "react-router";
+import { Link } from "react-router";
 import BlogCard from "../components/card/BlogCard";
 import CategoryCard from "../components/card/CategoryCard";
 import ImageSwiper from "../components/swiper/ImageSwiper";
@@ -86,7 +86,7 @@ export default function HomePage() {
       image: image13,
       title: "we Home",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing dui tellus commodo convallis. Auctor eget orci pharetra non. ",
-    }
+    },
   ];
 
   const companyUsers = [
@@ -162,7 +162,7 @@ export default function HomePage() {
   return (
     <>
       {/* project-slider */}
-      <div className="lg:w-[90%] ml-auto lg:mb-[90px] mb-[50px] ">
+      <div className="lg:w-[90%] ml-auto lg:mb-[90px] mb-[50px]">
         <div className="flex lg:flex-row flex-col items-center">
           <div className="lg:w-2/5 w-full">
             <div className="pr-5 w-full">
@@ -175,7 +175,7 @@ export default function HomePage() {
                 pharetra non. Integer lorem in scelerisque tortor dui tempor
               </p>
               <Link to={`/single-page/project`}>
-                <button className="bg-black px-6 py-2.5 flex gap-3.5 items-center uppercase cursor-pointer mb-[50px] lg:mb-0 lg:ml-0 ml-6">
+                <button className="bg-black px-7 py-4 flex gap-3.5 items-center uppercase cursor-pointer mb-[50px] lg:mb-0 lg:ml-0 ml-6">
                   <span className="text-white lg:text-lg text-sm font-semibold font-inconsolata uppercase leading-0 ">
                     View a project
                   </span>
@@ -222,7 +222,10 @@ export default function HomePage() {
 
               <div className="bg-[#F2F2F2] md:py-7 py-5 text-[#3D3D3D] flex divide-x-1 divide-gray-400 h-[120px] absolute right-[-34px] lg:right-0 md:mt-6 mt-3 shadow-md shadow-gray-300">
                 {boxInfo.map((item, index) => (
-                  <div className="flex flex-col md:px-10 px-7 items-center justify-center" key={index}>
+                  <div
+                    className="flex flex-col md:px-10 px-7 items-center justify-center"
+                    key={index}
+                  >
                     <span className="font-bold font-raleway md:text-4xl text-2xl">
                       {item.title}
                     </span>
@@ -237,7 +240,7 @@ export default function HomePage() {
 
           <div className="lg:w-1/2 lg:mt-0 mt-30 lg:pl-0 pl-6">
             <div className="flex gap-5 items-center mb-6">
-              <span className="border-b-2 w-[80px]"></span>
+              <span className="border-b-2 w-[80px] rounded-full"></span>
               <span className="text-black font-semibold lg:text-lg text-sm">
                 Hello There
               </span>
@@ -265,7 +268,7 @@ export default function HomePage() {
           <span className="text-black font-semibold lg:text-lg text-sm">
             Services
           </span>
-          <span className="border-b-2 w-[80px]"></span>
+          <span className="border-b-2 w-[80px] rounded-full"></span>
         </div>
         <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           Our capacity to help make your wishes come true
@@ -284,7 +287,7 @@ export default function HomePage() {
           <span className="text-black font-semibold lg:text-lg text-sm">
             Our Project
           </span>
-          <span className="border-b-2 w-[80px]"></span>
+          <span className="border-b-2 w-[80px] rounded-full"></span>
         </div>
         <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9 lg:px-0 px-6">
           Our latest projects
@@ -299,7 +302,7 @@ export default function HomePage() {
           <span className="text-black font-semibold lg:text-lg text-sm">
             Testimonial
           </span>
-          <span className="border-b-2 w-[80px]"></span>
+          <span className="border-b-2 w-[80px] rounded-full"></span>
         </div>
         <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           What Our Clients Say
@@ -315,22 +318,24 @@ export default function HomePage() {
         <figure className="lg:h-[400px] h-[308px] w-full">
           <img className="w-full h-full object-cover" src={image8} alt="#" />
         </figure>
-        <div className=" absolute md:top-[20%] top-[15%] lg:left-[10%] left-[5%] lg:w-1/4 md:w-2/4 w-2/3">
-          <h2 className="font-bold font-raleway text-[#3D3D3D] lg:text-[40px] text-2xl mb-6">
-            Have A Question ? Start Consultation Now
-          </h2>
-          <p className="font-inconsolata lg:text-[16px] text-sm font-medium text-[#3D3D3D] mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing
-            dui tellus commodo convallis.
-          </p>
-          <Link to="/contact-us">
-            <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer bg-black">
-              <span className="font-inconsolata lg:text-lg text-sm font-bold leading-0 text-white">
-                CONTACT US
-              </span>
-              <ArrowUpRightIcon className="size-5 text-white" />
-            </button>
-          </Link>
+        <div className="container mx-auto lg:px-0 px-6" >
+          <div className=" absolute top-[20%] lg:w-1/4 md:w-2/4 w-2/3">
+            <h2 className="font-bold font-raleway text-[#3D3D3D] lg:text-[40px] text-2xl mb-6">
+              Have A Question ? Start Consultation Now
+            </h2>
+            <p className="font-inconsolata lg:text-[16px] text-sm font-medium text-[#3D3D3D] mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Adipiscing dui tellus commodo convallis.
+            </p>
+            <Link to="/contact-us">
+              <button className="flex border px-[25px] py-[11px] gap-3.5 items-center cursor-pointer bg-black">
+                <span className="font-inconsolata lg:text-lg text-sm font-bold leading-0 text-white">
+                  CONTACT US
+                </span>
+                <ArrowUpRightIcon className="size-5 text-white" />
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -340,14 +345,14 @@ export default function HomePage() {
           <span className="text-black font-semibold lg:text-lg text-sm">
             Our Blog
           </span>
-          <span className="border-b-2 w-[80px]"></span>
+          <span className="border-b-2 w-[80px] rounded-full"></span>
         </div>
         <h2 className="lg:text-[40px] text-2xl font-raleway font-bold lg:leading-16 capitalize mb-9">
           Latest News and Articles
         </h2>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-x-12 gap-x-8 gap-y-20">
-          {blogCards.map((item,index) => (
+          {blogCards.map((item, index) => (
             <BlogCard blogCard={item} key={index} />
           ))}
         </div>
